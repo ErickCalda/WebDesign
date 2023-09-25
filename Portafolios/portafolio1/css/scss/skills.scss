@@ -1,0 +1,79 @@
+@use "global";
+
+.contenido-principal{
+   
+    .skills{
+        z-index: 1;
+        
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+       
+        .titulo{
+            
+           h2{
+            margin-bottom: 0;
+            text-align: left;
+            font-family: global.$bebas;
+            font-size: 8rem;
+            
+           }
+
+            
+
+        }
+        .texto{
+            margin-top: 3rem;
+            height: 20rem;
+            @include global.parrafo();
+            color: white;
+            text-align: left;
+            overflow:auto;
+            position: relative;
+            span{
+                font-weight: 700;
+                margin-right: 1rem;
+                color: black;
+            }
+           
+
+        }
+        .texto::-webkit-scrollbar{
+            width: 0.5rem;
+            position: absolute;
+            right: 5rem;
+            background-color: white;
+            border-radius: 0.5rem;
+            transition: all .3s ease-in-out;
+            
+            
+
+        }
+        
+        .texto::-webkit-scrollbar-thumb{
+            background-color: black;
+            border-radius: 0.5rem;
+
+        }
+        
+
+
+    }
+}
+
+@media only screen and (max-width:721px) {
+    //personalizado
+    
+.contenido-principal{
+   
+    .skills{
+        justify-content: center;
+        .titulo{
+            h2{
+                text-align: center;
+            }
+        }
+    }
+}     
+
+}

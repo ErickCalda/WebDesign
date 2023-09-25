@@ -1,0 +1,31 @@
+
+
+@forward "./scss/header.scss";
+
+@forward "./scss/home.scss";
+@forward "./scss/about-me.scss";
+@forward "./scss/portafoli-of-work.scss";
+@forward "./scss/skills.scss";
+@forward "./scss/contact.scss";
+@forward "./scss/footer.scss";
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+    margin: 0;
+    background-color: #585ce2;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 320px;
+  }
+
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+}

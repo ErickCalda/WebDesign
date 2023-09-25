@@ -1,0 +1,353 @@
+@use "global";
+.hide{
+    background-image: url(/img/Black\ Simple\ Dark\ Blogger\ Bio\ Link\ Website\ \(1\).avif);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    
+    
+
+    .HOME{
+        padding-top: 10rem;
+        
+        display: flex;
+        
+       
+        .introducion{
+           
+            
+            padding-top: 2rem;
+            .contenido-intro{
+               
+               
+               
+                h2{
+                    text-align: center;
+                    font-family: global.$bebas;
+                    font-weight: 900;
+                    font-size: 5rem; 
+                    margin-bottom: 0;              
+               }
+               .parrafo{
+                display: flex;
+                justify-content: center;
+                
+                p{
+                  
+                    text-align:center;
+                    font-family: global.$inter;
+                    font-size: 1.5rem ;
+                    font-weight: 500;
+                   
+                    width: 60%;
+                    
+                    margin-right: 0;
+                    margin: 0rem ;           
+                }
+
+               }
+               
+               .img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 1.5rem;
+                text-align: center;
+              
+             
+                
+                .btn{
+                    @include global.btn();
+                    margin-right: 1rem;
+                    position: relative;
+                    transition: all .3s ease-in;
+                    overflow: hidden;
+                    z-index: 1;
+                    background-color: rgb(2, 1, 63);
+                    color: black;
+                    border: solid 0.1rem rgb(0, 0, 0);
+                   
+                }
+                .btn:hover{
+                    color: white;
+
+                }
+                .btn::before{
+                    content: "";
+                    position: absolute;
+                   
+                    width: 8rem;
+                    height: 4.1rem;
+                   
+                    background-color: black;
+                    top: 0rem;
+                    padding: 5rem 3rem;
+                    left: 3rem;
+                    transition: all .3s ease;
+                    opacity: 0;
+                    z-index: -1;
+                    
+                }
+                .btn:hover::before{
+                    cursor: pointer;
+                    padding: 2rem 7.5rem;
+                   
+                    top: 0;
+                    left: 0;
+                    opacity: 1;
+                    
+                   
+                
+                    
+
+                }
+                  img{
+                   width: 2.5rem;
+                   margin-right: 1rem;
+                  }
+   
+               }
+            }
+           
+        }
+               
+        .foto{
+           
+         
+            padding-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            img{
+                width: 25rem;
+                border-radius: 50%;
+            }
+          
+        }
+       
+    }
+    .arrow{
+        position: absolute;
+       cursor: pointer;
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        img{
+            transform: rotate(90deg);
+           width: 3.5rem;
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 599px) {
+    /* Estilos para pantallas pequeñas (móviles) */
+    .hide{
+
+        .HOME{
+            padding-top:5rem;
+            display: block;
+            .introducion{
+                width: 100%;
+
+                padding-top: 5rem;
+               
+               
+            }
+                   
+            .foto{
+                padding-top: 2rem;
+                img{
+                    width: 20rem;
+                }
+  
+            }
+           
+        }
+   
+}
+   
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+
+    /* Estilos para tabletas en orientación vertical */
+    .hide{
+
+        .HOME{
+            padding-top:15rem;
+            display: block;
+            .introducion{
+                
+
+                padding-top: 5rem;
+                 .contenido-intro{
+                    h2{
+                        font-size: 7rem;
+                    }
+                    .parrafo{
+                        margin-top: 1rem;
+                        margin-bottom: 2rem;
+                    }
+     
+                } 
+               
+            }
+                   
+            .foto{
+                padding-top: 5rem;
+                img{
+                    width: 20rem;
+                }
+  
+            }
+           
+        }
+   
+}
+   
+   
+  }
+  
+  @media only screen and (min-width: 900px) and (max-width: 1199px) {
+    /* Estilos para tabletas en orientación horizontal */
+    .hide{
+
+        .HOME{
+            padding-top:20rem;
+            
+            .introducion{
+                width: 100%;
+
+                padding-top: 5rem;
+                .contenido-intro{
+                    h2{
+                        text-align: left;
+                        font-size: 6rem;
+                    }
+                    .parrafo{
+                        justify-content: left;
+                        p{
+                            text-align: left;
+                        }
+                    }
+                    .img{
+                        justify-content: left;
+                    }
+     
+                }
+               
+            }
+                   
+            .foto{
+                padding-top: 7rem;
+                img{
+                    width: 30rem;
+                }
+  
+            }
+           
+        }
+   
+}
+   
+   
+  }
+  
+  @media only screen and (min-width: 1200px) and (max-width: 1439px) {
+    /* Estilos para pantallas de escritorio pequeñas */
+    .hide{
+
+        .HOME{
+            padding-top:13rem;
+            
+            .introducion{
+                
+
+                padding-top: 9rem;
+                .contenido-intro{
+                    h2{
+                        text-align: left;
+                        font-size: 7rem;
+                    }
+                    .parrafo{
+                        justify-content: left;
+                        p{
+                            margin:1rem 1rem;
+                            text-align: left;
+                        }
+                    }
+                    .img{
+                        justify-content: left;
+                    }
+     
+                }
+               
+            }
+            .foto{
+                padding-top: 7rem;
+                img{
+                    width: 35rem;
+                }
+  
+            }
+                   
+           
+           
+        }
+   
+}
+  
+    
+  }
+  
+  @media only screen and (min-width: 1440px) {
+    /* Estilos para pantallas de escritorio estándar */
+    .hide{
+
+        .HOME{
+            padding-top:18rem;
+            
+            .introducion{
+                
+
+                padding-top: 9rem;
+                .contenido-intro{
+                    h2{
+                        text-align: left;
+                        font-size: 8rem;
+                    }
+                    .parrafo{
+                        justify-content: left;
+                        p{
+                            margin: 1rem 1rem;
+                            text-align: left;
+                        }
+                    }
+                    .img{
+                        justify-content: left;
+                    }
+     
+                }
+               
+            }
+            .foto{
+                padding-top: 7rem;
+                img{
+                    width: 35rem;
+                }
+  
+            }
+                   
+           
+           
+        }
+   
+}
+    
+  }

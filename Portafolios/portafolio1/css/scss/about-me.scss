@@ -1,0 +1,28 @@
+@use "global";
+.contenido-principal{
+    .contenido-main{
+        .about-me{
+            .contenido{
+                h2{
+                    font-family: global.$bebas;
+                    font-size: 6rem;
+                    text-align: center;
+                    margin-bottom: 0.5rem;
+                }
+                .texto{
+                    display: flex;
+                    justify-content: center;
+                    .contenido-text{
+                        text-align: center;
+                        width:70%;
+                        p{
+                           @include global.parrafo();
+                           
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

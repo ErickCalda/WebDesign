@@ -1,0 +1,52 @@
+@use "global";
+.footer{
+    background-color: black;
+   
+    .contra{
+        justify-content: center;
+        h3{
+            padding-top: 4rem;
+            text-align: center;
+            font-size: 6rem;
+            font-family: global.$bebas;
+            color: white;
+            margin-bottom: 2rem;
+
+        }
+        .redes{
+            padding-bottom: 2rem;
+            text-align: center;
+            img{
+                margin-right: 7rem;
+                width: 10%;
+            }
+            img:last-of-type{
+                margin-right: 0rem;
+
+            }
+        }
+        .frace{
+            text-align: center;
+            padding-bottom: 2rem;
+            p{
+                font-size: 2rem;
+                font-family: global.$inter;
+                margin-bottom: 0;
+                color: white;
+                font-style: italic;
+            }
+        }
+    }
+}
+@media  only  screen and (min-width:769px) {
+    .footer{
+        .contra{
+            .redes{
+                img{
+                    width: 7rem;
+                }
+            }
+        }
+    }
+    
+}

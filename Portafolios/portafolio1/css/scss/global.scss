@@ -1,0 +1,21 @@
+$roboto-condesed:'Roboto Condensed', sans-serif;
+$inter: 'Inter', sans-serif;
+$bebas: 'Bebas Neue', sans-serif;
+
+@mixin parrafo{
+    font-family:$inter;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+@mixin btn{
+    font-size: 1.8rem;
+    font-family: $inter;
+    font-weight: 700;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+
+}
+
