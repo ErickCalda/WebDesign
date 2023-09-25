@@ -1,7 +1,7 @@
 
      
 
-import { enviarCorreo } from '../index.js';
+
 const nombre = document.querySelector('#nombre');
 const email = document.querySelector('#email');
 const mensaje = document.querySelector('#Mensaje');
