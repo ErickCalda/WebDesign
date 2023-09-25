@@ -1,0 +1,78 @@
+
+@use 'var';
+
+
+.contenido-main{
+    
+    
+    top: 7rem;
+    .seccion1{
+        height: 60rem;
+       
+        .hide{
+            background-image: url(/img/foto1.avif);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+               
+                font-size: 9vw;
+              margin: 0;
+              text-align: center;
+                width: 80%;
+                color: rgb(255, 255, 255);
+                font-family: var.$tituloceleste;
+               
+            }
+        }
+    }
+}
+
+
+.footer-before{
+    .contenido-footer{
+        .colun1{
+            h3{
+                height: 6rem;
+            
+               
+            }
+            p{
+                margin-top: 4.5rem;
+            }
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width:769px){
+
+
+    
+.contenido-main{
+    
+    top: 4.5rem;
+    .seccion1{
+       
+        .hide{
+           
+            h1{
+                font-size: 6rem;
+                width: 90%;
+                
+               
+             
+            
+            }
+        }
+    }
+}
+
+    
+}

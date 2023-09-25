@@ -1,0 +1,167 @@
+@use'var';
+
+.footer-before{
+    margin-top: 7rem;
+    background-color:rgb(0, 0, 0);
+    overflow: hidden;
+
+    .contenido-footer{
+        height: auto;
+        color: white;
+    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        .colun1{
+            position: relative;
+            width: 40vw;
+            padding-left: 2rem;
+            h3{
+                font-size: 2.5rem;
+                font-weight: 600;
+                font-family: var.$tituloceleste;
+                margin-top: 7rem;
+            }
+            p{
+                margin-top: 1rem;
+                font-size: 1.5rem;
+                font-family: var.$titolos-demas;
+                width: 80%;
+            }
+
+            .h3{
+                font-size: 5vw;
+                font-weight: 600;
+                font-family: var.$tituloceleste;
+                margin-top: 5rem;
+                img{
+                    width: 10%;
+                    margin-left: 0.5rem;
+                }
+
+
+            }
+
+
+
+        }
+       
+
+
+        .conte23{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+            
+        .colun2{
+            position: relative;
+            width: 100%;
+          
+            .mas{
+                position: relative;
+                margin-top: 7.5rem;
+                overflow: hidden;
+               
+                p{
+                    margin-top: 1rem;
+                    font-size: 1.5rem;
+                    font-family: var.$titolos-demas;
+                    width: 80%;
+                    padding-left: 2rem;
+                    
+                    
+                }
+            }
+            .mas::before{
+                content: "";
+                width: 0.1rem;
+                height: 9rem;
+                background-color: white;
+                position: absolute;
+                left: 0;
+               top: 0.8rem;
+              
+            }
+
+            .politicas{
+                margin-top: 6rem;
+                position: relative;
+                p{
+                    margin-top: 1rem;
+                    font-size: 1.5rem;
+                    font-family: var.$titolos-demas;
+                    width: 80%;
+                    padding-left: 2rem;
+                    
+                }
+
+            }
+            .politicas::before{
+                content: "";
+                width: 0.1rem;
+                height: 9rem;
+                background-color: white;
+                position: absolute;
+                left: 0;
+               top: -1rem;
+              
+            }
+          
+
+
+        }
+
+
+       
+        .colun3{
+           
+            width: 100%;
+            position: relative;
+            .conte{
+                margin-top: 8.2rem;
+                p{
+                    margin-top: 1rem;
+                    font-size: 1.5rem;
+                    font-family: var.$titolos-demas;
+                    width: 80%;
+                    padding-left: 2rem;
+                    
+                }
+
+            }
+
+            .conte::before{
+                content: "";
+                width: 0.1rem;
+                height: 5.5rem;
+                background-color: white;
+                position: absolute;
+                left: 0;
+               top: 8rem;
+              
+            }
+           
+
+        }
+
+
+
+
+
+        }
+
+       
+
+    }
+
+    .copy{
+
+        width: 100%;
+        height:3rem;
+        p{
+            font-size: 1.1rem;
+            color: white;
+           text-align: center;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+@use "var";
+@use "mixin";
+
+
+
+.contenido-main{
+    
+
+  
+       
+        
+        
+        .seccion-total{
+             padding-top: 0rem;
+             height: 70rem;
+         .contenido-seccion{
+             overflow: hidden;
+             background-image: url(/img/bodegon-libros-versus-tecnologia.avif);
+             background-position: center center;
+             background-size: cover;
+             background-repeat: no-repeat;
+             height: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+            
+
+           
+            .titulo{
+                
+             
+                height: 100%;
+                width: 70%;
+               
+               
+                    h1{
+                 
+                        padding-top: 15vh;
+                        font-family:var.$titolos-demas ;
+                        font-weight: 800;
+                        font-size:5vw;
+                    text-align: center;
+                    color: rgb(255, 255, 255);
+                    
+                    }
+                  
+
+
+                    
+
+                 
+                }
+               
+
+                
+
+               
+                p{
+                    font-family: var.$titolos-demas;
+                    font-weight:400 ;
+                   padding-left: 4rem;
+                   padding-right: 4rem;
+                    font-size: 2rem;
+                    text-align: justify;
+                    
+                 
+                 
+                    
+                       
+
+                    
+                       
+                    
+                }
+
+               
+
+            }
+
+            
+
+
+        }
+
+         .clearflix{
+                    @include mixin.clearflix();
+
+                }
+
+
+                hr{
+                    width: 60%;
+                    background-color: rgb(66, 66, 66);
+                    height: 0.3rem;
+                    border-radius: 50%;
+                }
+
+    
+}
+
+
+
+
+
+@media only screen and (max-width:769px){
+    
+.contenido-main{
+    
+
+    
+    
+        
+        
+        .seccion-total{
+            height: 50rem;
+                
+         .contenido-seccion{
+            text-align: center;
+            height: 1005;
+            .titulo{
+                   padding-left: 0rem;
+
+              
+                    h1{
+                        padding-top: 10rem;
+                        font-size: 7vw;
+                        float: none;
+                        width: 100%;
+                       
+                    
+                    
+                    
+                    }
+                 
+                }
+                p{
+                   
+                    font-size: 2rem;
+                   
+                    
+                }
+
+               
+
+            }
+
+            
+
+
+        }
+
+    
+}
+
+}

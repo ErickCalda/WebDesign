@@ -1,0 +1,130 @@
+
+@use 'var' ;
+
+@mixin titulo-h2{
+    font-family: var.$titolos-demas;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 7rem;
+
+}
+
+@mixin imagen{
+    width: 60%;
+    height: auto;
+    
+   
+  
+    
+    
+
+}
+
+@mixin entrada{
+    
+    
+}
+
+// modificados para el media queri
+@mixin imagen-queri{
+    width: 70%;
+    height: auto;
+    opacity: 0;
+    transform: scale(0.2);
+    transition: all .4s ease-in-out;
+    transform: translateX(-20px);
+    
+
+}
+@mixin entrada-queri{
+    opacity: 1;
+    transform: scale(0.8);
+    transform: translateX(20px);
+    
+}
+
+
+
+
+
+
+
+
+@mixin detalles {overflow: hidden;}
+
+@mixin conte-deta{
+width: 100%;
+    
+}
+
+@mixin conte-deta-P{
+    font-family: var.$titolos-demas;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+
+@mixin p-SPAN{
+    font-weight: 400;
+    
+
+}
+
+
+@mixin imagenes{
+   display: none;
+    
+
+}
+
+@mixin informacion-H3{
+    width: 70%;
+    font-size: 2rem;
+    font-family: var.$titolos-demas;
+    font-weight: 600;
+
+}
+
+@mixin informacion-P{
+    font-family: var.$titolos-demas;
+    font-size: 1.5rem;
+    
+    
+}
+
+@mixin boton {
+    background-color: rgb(255, 60, 0);
+                    font-size: 1.5rem;
+                    padding: 0.8rem 1.5rem ;
+                    border: none;
+                    border-radius: 0.5rem;
+                    text-align: center;
+                    font-family: var.$titolos-demas;
+                    font-weight: 500;
+                    text-decoration: none;
+                    margin-bottom:4rem ;
+                    color: white;
+                    cursor: pointer;
+    
+}
+@mixin clearflix{
+    content: ""; 
+        clear: both;
+        display: table;
+
+}
+
+
+@mixin seccion-all{
+    margin-top: 10rem;
+
+}
+
+
+
+
+
+
+
+

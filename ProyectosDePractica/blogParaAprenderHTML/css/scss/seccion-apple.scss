@@ -1,0 +1,99 @@
+
+@use 'mixin';
+
+
+.contenido-main{
+
+    .seccion-apple{
+        @include mixin.seccion-all();
+       
+        .article-marca{
+            h2{
+                
+                @include mixin.titulo-h2();
+            }
+            img{
+   
+                @include mixin.imagen();               
+            }
+            .entrada{ @include mixin.entrada();}
+
+            .detalles{
+                @include mixin.detalles();
+                .conte-deta{
+                    
+                    @include mixin.conte-deta();
+    
+                    p{
+  
+                     @include mixin.conte-deta-P();
+                        span{
+                            
+                            @include mixin.p-SPAN();
+                        }
+
+                    }
+                 }
+
+                 .ima{  @include mixin.imagenes()}
+               
+            }
+
+            .informacion{
+
+                h3{
+                    @include mixin.informacion-H3();
+
+                }
+                p{
+                    @include mixin.informacion-P();
+
+                }
+            }
+
+            .btn{ @include mixin.boton(); }
+        }
+    }
+
+
+    .clearfix::after {
+        @include mixin.clearflix();
+      } 
+}
+
+
+@media only screen and (max-width:576px){
+    .contenido-main{
+
+        .seccion-apple{
+           
+           
+            .article-marca{
+                
+                img{
+       
+                    @include mixin.imagen-queri();               
+                }
+
+                .entrada{
+                    @include mixin.entrada-queri();               
+
+                }
+                
+    
+                
+    
+                
+    
+                
+            }
+        }
+    
+    
+      
+    }
+
+
+
+
+}

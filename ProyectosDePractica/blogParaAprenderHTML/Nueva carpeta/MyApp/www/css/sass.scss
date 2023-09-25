@@ -1,0 +1,53 @@
+
+
+
+
+@forward './scss/heder.scss';
+
+
+@forward './scss/contenido-total.scss';
+@forward './scss/seccion-apple.scss';
+@forward './scss/seccion-hp.scss';
+@forward './scss/seccion-lenovo.scss';
+@forward './scss/footer.scss';
+
+
+@forward './scss/estilos-telefono.scss';
+@forward './scss//seccion-celulares.scss';
+@forward './scss/cookie.scss';
+
+
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    
+   
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .contenedor{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .contenedor2{
+    width: 60%;
+    margin: 0 auto;
+
+  }
+
+ 
+  body{
+    margin: 0;
+    min-width: 30rem;
+  
+   
+  }
+  
+
+

@@ -1,0 +1,410 @@
+@use "var";
+
+
+
+.stylo-heder{
+      //box shadow
+      transition: all .7s ease-in-out;
+      --webkit-box-shadow: 0px -2px 4px 4px rgba(0,0,0,1);
+      -moz-box-shadow: 0px -2px 4px 4px rgba(0,0,0,1);
+       box-shadow: 0px -2px 4px 4px rgba(0,0,0,1);
+}
+.menu-header{
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 7rem;
+    
+       
+                
+
+    .contenido-header {
+
+    
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    
+       
+       
+
+
+        .logo{
+            font-family:var.$tituloceleste ;
+            font-size: 4rem;
+            color:rgb(255, 255, 255);
+            text-decoration: none;
+            cursor: pointer;
+            
+            img{
+                width: 3rem;
+                height: auto;
+                
+                margin-left: 1rem
+            }
+            
+        }
+
+                .menu-nav{
+                    display: flex;
+                   
+
+                .imagen{
+                    cursor: pointer;
+                        width: 6rem;
+                        height: 6rem;
+                     
+                        position: relative;
+
+                        .medida{
+                           
+                            width: 3.5rem;
+                            height: 0.4rem;
+                          background-color: white;
+                            position: absolute;
+                            border-radius: 0.5rem;
+                            margin-left: 0.8rem;
+
+
+                        }
+                        .linea1{
+                            
+                            top: 2rem;
+                            transition: all .3s ease;
+                            
+                           
+
+                        }
+                        .linea2{
+                           top: 3rem;
+                           
+                           transition: all .3s ease;
+                       
+                          
+
+                        }
+                        .linea3{
+                           
+                            bottom: 1.5rem;
+                            transition: all .3s ease;
+                           
+
+                        }
+
+                        .line1{
+                            top: 2.5rem;
+                            transform: rotate(-45deg);
+                            background-color: rgb(255, 255, 255);
+                           
+                        
+                           
+
+                        }
+                        .line2{
+                           top: 1.8rem;
+                           display: none;
+                       
+                          
+
+                        }
+                        .line3{
+                           
+                            transform: rotate(45deg);
+                            bottom: 3rem;
+                            background-color: rgb(255, 255, 255);
+                           
+
+                        }
+
+
+
+                        
+                    }
+
+                    
+
+                    .divlistas{
+                        display:block;
+                        position: absolute;
+                        transform: translateX(-100px);
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all .3s ease;
+                       
+                        background-color: rgb(255, 255, 255);
+                        width: 100%;
+                        left: 0;
+                        top: 7rem;
+                        height: 80vh;
+                       
+                        border-top: solid 0.1rem rgba(255, 255, 255, 0.445);
+                        list-style: none;
+                        overflow:auto;
+                        display: grid;
+                        grid-template-columns: repeat(2,1fr);
+                        z-index: 9;
+
+                        .lista-principal{
+                            padding-top: 4rem;
+                            list-style: none;
+                            position: relative;
+                           
+
+                            li{
+
+                                margin-bottom: 5rem;
+                               
+                                font-size: 3rem;
+                                color: rgb(0, 0, 0);
+                                width: 26rem;
+                                font-family: var.$tituloceleste;
+                                cursor: pointer;
+                               
+                                a{
+                                    font-size: 3rem;
+                                    color: rgb(0, 0, 0);
+                                    text-decoration: none;
+                                    font-family: var.$tituloceleste;
+                                    cursor: pointer;
+
+                                
+                                }
+                            }
+                        }
+
+                        .lista-principal::before{
+                            content: "";
+                            width: 0.1rem;
+                            height: 30rem;
+                            background-color: rgb(0, 0, 0);
+                            position: absolute;
+                            left: 2rem;
+
+                        }
+
+                        .sub-lista{
+                            list-style: none;
+                            padding-top: 6rem;
+                            position: relative;
+                            transition: all .4s ease;
+                            transform: translateX(-50px);
+                            opacity: 0;
+                            visibility: hidden;
+                            
+                            
+                           
+                          
+
+
+                            li{
+                                
+                                margin-bottom: 4rem;
+
+                                a{
+                                    font-size: 2.5rem;
+                                    color: rgb(0, 0, 0);
+                                    text-decoration: none;
+                                    font-family: var.$tituloceleste;
+                                   
+
+                                }
+                            }
+
+                          
+
+
+                        }
+                       
+
+                        .sub-lista::before{
+                               
+                            content: "";
+                            width: 0.1rem;
+                            height: 30rem;
+                            background-color: rgb(0, 0, 0);
+                            position: absolute;
+                            left: 2rem;
+
+                        }
+
+                        .sub-lista-aparese{
+                           
+                            transform: translateY(0px);
+                            opacity: 1;
+                            visibility: visible;
+
+                        }
+                        
+                       
+
+                        
+
+                    }
+
+                    .style-ol{
+                      
+                        
+                        transform: translateX(0px);
+                        opacity: 1;
+                        visibility: visible;
+                        
+                      
+                        
+
+
+                    }
+
+            }
+
+    }
+}
+
+
+@media only screen and (max-width:579px) {
+
+
+
+    .menu-header{
+      
+    
+        .contenido-header {
+    
+    
+           .logo{
+            font-size: 3rem;
+            img{
+                width: 2.4rem;
+                height: auto;
+                
+                margin-left: 1rem
+
+            }
+           }
+    
+                    .menu-nav{
+                        .imagen{
+                            cursor: pointer;
+                                width: 6rem;
+                                height: 6rem;
+                             
+                                position: relative;
+        
+                                .medida{
+                                   
+                                    width: 2.5rem;
+                                    height: 0.4rem;
+                                  background-color: white;
+                                    position: absolute;
+                                    border-radius: 0.5rem;
+                                    margin-left: 0.8rem;
+        
+        
+                                }
+                     
+                            }
+                        .divlistas{
+                          
+                           
+                        
+                            .lista-principal{
+                                
+                          
+    
+                                li{
+                                  padding:0;
+                                  margin: 0;
+                                  
+    
+                                   
+                                }
+
+                                .sacaarsublista{
+                                    margin-bottom: 14rem;
+                                }
+                                .sacaarsublista2{
+                                    margin-bottom: 0rem
+
+                                }
+                                .style{
+                                    margin-top: 4rem;
+                                    margin-bottom:3rem;
+                                }
+                            }
+    
+                            .sub-lista{
+
+                               
+                                height: 10rem;
+                               padding: 0;
+                                top: 10rem;
+                              
+                                visibility: hidden;
+                                opacity:0;
+                                position: absolute;
+                                left: 25rem;
+                                transform: none;
+                                transition: all .2s ease;
+                              
+                               
+                                
+                               
+                             
+    
+                                li{
+                               
+                                    a{
+                                        font-size: 2rem;
+                                        color: black;
+                                      
+                                       
+    
+                                    }
+                                }
+    
+                              
+    
+    
+                            }
+    
+                            .sub-lista::before{
+                                   
+                                display: none;
+    
+                            }
+    
+                            .sub-lista-aparese{
+                            
+    
+                                transform: none;
+                                left: 7rem;
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                            
+                           
+    
+                            
+    
+                        }
+
+
+    
+                      
+    
+                }
+    
+        }
+    }
+
+
+
+
+
+
+
+                 
+}
